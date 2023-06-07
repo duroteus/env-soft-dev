@@ -34,4 +34,16 @@ public class Pessoa {
         this.genero = genero;
     }
 
+    public void imprimirInformacoes() {
+        System.out.printf("Nome do aluno: %s. Idade: %d. Gênero: %s.%n", this.nome, this.idade,
+                this.genero);
+    }
+
+    public boolean maiorDeIdade() {
+        if (this.idade >= 18) {
+            return true;
+        }
+        return false;
+    }
+
 }
